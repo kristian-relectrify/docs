@@ -37,7 +37,7 @@ def plot_degradation_model(mdl, std):
     R2_adj = round(linear_fit.rsquared_adj,2)
     deg_per_100 = round(linear_fit.params[1] * 100 * -1,2)
     
-    fig, ax = plt.subplots(figsize=(12,6))
+    fig, ax = plt.subplots(figsize=(6,3))
     
     ax.plot(mdl.index, Y, 
             ls='-', c='#5fff67',
@@ -85,7 +85,7 @@ def plot_degradation_model(mdl, std):
 def plot_revolve_model(mdl, std, eol_pct, init_cap_kwh):
     eol_index = mdl[mdl <= eol_pct].dropna().index.min()
 
-    fig, ax = plt.subplots(figsize=(12,6))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     ax.plot(mdl.index, mdl.y, 
             ls='-', c='#5fff67',
