@@ -30,13 +30,19 @@ path_to_data = join(dirname(abspath('')), 'data')
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [0;32mIn[1], line 5[0m
-[1;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mos[39;00m
+Cell [0;32mIn[1], line 7[0m
 [1;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mos[39;00m[38;5;21;01m.[39;00m[38;5;21;01mpath[39;00m [38;5;28;01mimport[39;00m dirname, abspath, join
-[0;32m----> 5[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[1;32m      7[0m [38;5;28;01mimport[39;00m [38;5;21;01mhelper[39;00m
+[1;32m      5[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
+[0;32m----> 7[0m [38;5;28;01mimport[39;00m [38;5;21;01mhelper[39;00m
 [1;32m      9[0m path_to_data [38;5;241m=[39m join(dirname(abspath([38;5;124m'[39m[38;5;124m'[39m)), [38;5;124m'[39m[38;5;124mdata[39m[38;5;124m'[39m)
 
-[0;31mModuleNotFoundError[0m: No module named 'pandas'
-ModuleNotFoundError: No module named 'pandas'
+File [0;32m~/work/docs/docs/docs/helper.py:7[0m
+[1;32m      5[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mcm[39;00m [38;5;28;01mimport[39;00m ScalarMappable
+[1;32m      6[0m [38;5;28;01mfrom[39;00m [38;5;21;01mmatplotlib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mticker[39;00m [38;5;28;01mimport[39;00m (MultipleLocator, AutoMinorLocator)
+[0;32m----> 7[0m [38;5;28;01mimport[39;00m [38;5;21;01mseaborn[39;00m [38;5;28;01mas[39;00m [38;5;21;01msns[39;00m
+[1;32m      9[0m [38;5;28;01mimport[39;00m [38;5;21;01mstatsmodels[39;00m[38;5;21;01m.[39;00m[38;5;21;01mapi[39;00m [38;5;28;01mas[39;00m [38;5;21;01msm[39;00m
+[1;32m     11[0m [38;5;28;01mdef[39;00m [38;5;21mprocess_degradation_model[39m(data):
+
+[0;31mModuleNotFoundError[0m: No module named 'seaborn'
+ModuleNotFoundError: No module named 'seaborn'
 
