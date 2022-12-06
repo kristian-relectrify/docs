@@ -5,6 +5,4 @@ ghp-import
 pandas
 seaborn
 statsmodels
-jsonschema==4
 ipympl==0.9.1
-ipywidgets
