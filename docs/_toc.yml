@@ -3,6 +3,10 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
+parts:
+  - caption: ReVolve
+    chapters:
+    - file : Degradation
+  - caption: Sample
+    chapters:
+    - file : markdown
