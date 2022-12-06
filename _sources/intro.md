@@ -1,10 +1,9 @@
 # Relectrify Docs
 
-This is a small sample book to give you a feel for how book content is
-structured.
+Sample of a method that we can use to deploy documentation-as-code. This method uses jupyter-book which allows us to easily deploy files such as .ipynb, .md. .rst, etc.
 
 :::{note}
-Here is a note!
+Cool features
 :::
 
 And here is a code block:

@@ -370,14 +370,14 @@ path_to_data = join(dirname(abspath(&#39;&#39;)), &#39;data&#39;)
 <span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">helper</span>
 <span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="n">path_to_data</span> <span class="o">=</span> <span class="n">join</span><span class="p">(</span><span class="n">dirname</span><span class="p">(</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)),</span> <span class="s1">&#39;data&#39;</span><span class="p">)</span>
 
-<span class="n">File</span> <span class="o">~/</span><span class="n">work</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">helper</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">7</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">matplotlib.cm</span> <span class="kn">import</span> <span class="n">ScalarMappable</span>
+<span class="n">File</span> <span class="o">~/</span><span class="n">work</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">helper</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">9</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="p">(</span><span class="n">MultipleLocator</span><span class="p">,</span> <span class="n">AutoMinorLocator</span><span class="p">)</span>
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="ne">----&gt; </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">statsmodels.api</span> <span class="k">as</span> <span class="nn">sm</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="k">def</span> <span class="nf">process_degradation_model</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span>     <span class="n">average_</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;seaborn&#39;
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;statsmodels&#39;
 </pre></div>
 </div>
 </div>
